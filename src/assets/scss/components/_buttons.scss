@@ -1,0 +1,32 @@
+@mixin button-gradient($color-1, $color-2) {
+  position: relative;
+  background: $color-1 !important;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: transform 300ms;
+    @include linear-gradient($color-1, $color-2);
+  }
+
+  .button-text {
+    position: relative;
+  }
+
+  &:hover {
+    &:before {
+      transform: translateX(100%);
+    }
+  }
+}
+
+.button,
+button,
+input[type="button"] {
+  font-weight: bold;
+}

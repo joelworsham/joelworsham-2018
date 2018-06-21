@@ -1,0 +1,123 @@
+.site-header {
+  @include background-gradient-a;
+  @include xy-grid;
+  color: $font-blue;
+  margin-bottom: 5rem;
+
+  @include breakpoint(small only) {
+    @include xy-gutters($gutter-type: padding);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @include breakpoint(large) {
+    padding: 8%;
+  }
+
+  &.animated {
+    .site-header-page-info {
+      &:before {
+        height: 3rem;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .page-title {
+    color: $white;
+  }
+}
+
+.site-header-page-info {
+  @include xy-cell(12);
+  position: relative;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint(large) {
+    @include xy-cell(8);
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: '';
+    display: none;
+
+    @include corner-border(
+            $color: $font-blue,
+            $height: 3rem,
+            $width: 8rem,
+            $offset: 3rem,
+            $position: bottom-left
+    );
+
+    @include breakpoint(large) {
+      display: block;
+    }
+  }
+}
+
+.site-navigation {
+  @include xy-cell(12);
+  color: $white;
+
+  @include breakpoint(large) {
+    @include xy-cell(4);
+    text-align: right;
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    a {
+      @include breakpoint(small only) {
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+
+      @include breakpoint(medium only) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    color: inherit;
+    overflow-x: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $white;
+      transform: translateX(101%);
+      transition: transform 400ms;
+      transition-timing-function: ease-in;
+    }
+
+    &:hover {
+      &:before {
+        transform: translateX(0);
+        transition-timing-function: ease-out;
+      }
+    }
+  }
+}
+
+.site-navigation-home {
+  padding-left: 0.5rem;
+
+  &:hover {
+    .site-navigation-home-icon {
+      transform: translateX(-0.5rem);
+    }
+  }
+}
+
+.site-navigation-home-icon {
+  transition: transform 500ms;
+}

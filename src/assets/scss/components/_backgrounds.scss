@@ -1,0 +1,15 @@
+@mixin background-gradient-a {
+  @include linear-gradient(#3881da, #51becf);
+}
+
+@mixin background-gradient-b {
+  @include linear-gradient(#BD3BA8, #CF6B51);
+}
+
+.background-gradient-a {
+  @include background-gradient-a;
+}
+
+.background-gradient-b {
+  @include background-gradient-b;
+}

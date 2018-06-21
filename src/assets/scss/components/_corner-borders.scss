@@ -1,0 +1,64 @@
+@mixin corner-border(
+  $position: top-left,
+  $width: 5rem,
+  $height: 5rem,
+  $border-width: 4px,
+  $offset: 3rem,
+  $color: $primary-color,
+  $animated: true,
+  $animate-offset: 100%
+) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: $height;
+
+  @if $position == top-left {
+    border-left: $border-width solid $color;
+    border-top: $border-width solid $color;
+    top: - $offset;
+    left: - $offset;
+
+    @if $animated {
+      transform: translateX(#{$animate-offset});
+    }
+  }
+
+  @if $position == top-right {
+    border-right: $border-width solid $color;
+    border-top: $border-width solid $color;
+    top: - $offset;
+    right: - $offset;
+
+    @if $animated {
+      transform: translateX(-#{$animate-offset});
+    }
+  }
+
+  @if $position == bottom-left {
+    border-left: $border-width solid $color;
+    border-bottom: $border-width solid $color;
+    bottom: - $offset;
+    left: - $offset;
+
+    @if $animated {
+      transform: translateX(#{$animate-offset});
+    }
+  }
+
+  @if $position == bottom-right {
+    border-right: $border-width solid $color;
+    border-bottom: $border-width solid $color;
+    bottom: - $offset;
+    right: - $offset;
+
+    @if $animated {
+      transform: translateX(-#{$animate-offset});
+    }
+  }
+
+  @if $animated {
+    height: 0;
+    transition: transform 1000ms, height 1000ms;
+  }
+}
