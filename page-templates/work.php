@@ -316,9 +316,14 @@ get_header(); ?>
     <div class="resume">
         Want to download my official resume? Here you go!
         <br/><br/>
-        <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResume.pdf"
+        <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResumeColor.pdf"
            class="resume-download">
             <span class="button-text">Download Resume</span>
+        </a>
+        <br/>
+        <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResumePrint.pdf"
+           class="resume-download-print">
+            <span class="button-text">or download print friendly version</span>
         </a>
     </div>
 
