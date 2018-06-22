@@ -580,7 +580,7 @@
 }
 
 .front-about-picture {
-  text-align: right;
+  text-align: center;
   margin-bottom: 3rem;
 
   @include breakpoint(large) {
@@ -592,6 +592,7 @@
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 1s, transform 1s;
+    max-width: 400px;
 
     &.animated {
       opacity: 1;
