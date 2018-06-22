@@ -316,7 +316,7 @@ get_header(); ?>
     <div class="resume">
         Want to download my official resume? Here you go!
         <br/><br/>
-        <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResumeColor.pdf"
+        <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResume.pdf"
            class="resume-download">
             <span class="button-text">Download Resume</span>
         </a>
