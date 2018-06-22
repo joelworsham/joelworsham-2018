@@ -153,7 +153,7 @@
 }
 
 .front-header-main-action-contact {
-  color: inherit;
+  color: inherit !important;
 
   &:hover {
     text-decoration: underline;
@@ -423,6 +423,27 @@
   @include breakpoint(medium) {
     @include xy-cell(6);
     margin-bottom: 0;
+  }
+}
+
+.front-details-technologies {
+  font-size: 1rem;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $white;
+
+      .fa {
+        transform: translateX(0.5rem);
+      }
+    }
+
+    .fa {
+      vertical-align: middle;
+      transition: transform 500ms;
+    }
   }
 }
 

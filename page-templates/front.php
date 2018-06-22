@@ -118,6 +118,10 @@ get_header(); ?>
             <br/><br/>
             Here are some highlights of my knowledge and experience with building custom, modern, and beautiful web
             applications.
+            <br/><br/>
+            <p class="front-details-technologies">
+                <a href="/work/#technologies">Want more details? Check out some more technologies&nbsp;<span class="fa fa-arrow-alt-circle-right"></span></a>
+            </p>
         </div>
 
         <div class="front-details-specifics animate">

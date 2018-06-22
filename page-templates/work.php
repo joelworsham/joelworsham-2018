@@ -128,9 +128,8 @@ get_header(); ?>
                 Below you will find some of the various projects I’ve been a part of.
                 <br/>
                 <div class="work-technologies-skip">
-                    or skip to&nbsp;
                     <a href="#technologies">
-                        <span class="button-text">Technology Overview</span>
+                        or skip to&nbsp;technology overview&nbsp;<span class="fa fa-arrow-alt-circle-right"></span>
                     </a>
                 </div>
             </div>
@@ -248,7 +247,9 @@ get_header(); ?>
                 <div class="work-technologies-details">
                     <h2>Development</h2>
                     <p>
-                        Development is definitely more of what I do. I consider myself an expert in most modern web technologies. Almost all of my code is written with Object Oriented Principals, thorough documentation, and sensible architectural paradigms.
+                        Development is definitely more of what I do. I consider myself an expert in most modern web
+                        technologies. Almost all of my code is written with Object Oriented Principals, thorough
+                        documentation, and sensible architectural paradigms.
                     </p>
                 </div>
 
@@ -258,7 +259,8 @@ get_header(); ?>
                     </h3>
 
                     <div class="work-technologies-list">
-                        PHP, HTML (and HTML5), CSS (and CSS3), SASS, JavaScript (including ES6), JSON,  MarkDown, Bash, YAML
+                        PHP, HTML (and HTML5), CSS (and CSS3), SASS, JavaScript (including ES6), JSON, MarkDown, Bash,
+                        YAML
                     </div>
 
                     <h3 class="work-technologies-heading">
@@ -266,7 +268,8 @@ get_header(); ?>
                     </h3>
 
                     <div class="work-technologies-list">
-                        React (some Redux), jQuery, REST, SQL, Node, Gulp, Grunt, Webpack, Babel, Foundation for Sites, WordPress (custom theme and plugin development)
+                        React (some Redux), jQuery, REST, SQL, Node, Gulp, Grunt, Webpack, Babel, Foundation for Sites,
+                        WordPress (custom theme and plugin development)
                     </div>
 
                     <h3 class="work-technologies-heading">
@@ -284,7 +287,8 @@ get_header(); ?>
                 <div class="work-technologies-details">
                     <h2>Design</h2>
                     <p>
-                        I love working with designs. Coming up with a website design is one of my favorite things to do. Sometimes I forget to eat I get so into it! This website was fully designed by me as well.
+                        I love working with designs. Coming up with a website design is one of my favorite things to do.
+                        Sometimes I forget to eat I get so into it! This website was fully designed by me as well.
                     </p>
                 </div>
 
@@ -309,12 +313,13 @@ get_header(); ?>
         </div>
     </div>
 
-<div class="resume">
-    Want to download my official resume? Here you go!
-    <br/><br/>
-    <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResume.pdf" class="resume-download">
-        <span class="button-text">Download Resume</span>
-    </a>
-</div>
+    <div class="resume">
+        Want to download my official resume? Here you go!
+        <br/><br/>
+        <a href="<?php echo get_template_directory_uri(); ?>/dist/assets/files/JoelWorshamResume.pdf"
+           class="resume-download">
+            <span class="button-text">Download Resume</span>
+        </a>
+    </div>
 
 <?php get_footer();

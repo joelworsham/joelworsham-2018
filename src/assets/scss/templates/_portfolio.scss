@@ -1,13 +1,22 @@
 .work-technologies-skip {
   font-size: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   a {
-    @include button;
-    @include button-gradient(#BD3BA8, #CF6B51);
-    color: $white;
-    font-size: 1em;
-    margin-bottom: 0;
+    color: inherit;
+
+    &:hover {
+      color: $white;
+
+      .fa {
+        transform: translateX(0.5rem);
+      }
+    }
+
+    .fa {
+      vertical-align: middle;
+      transition: transform 500ms;
+    }
   }
 }
 
