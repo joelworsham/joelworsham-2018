@@ -346,6 +346,12 @@ body.portfolio-open {
       opacity: 1;
     }
   }
+
+  &.no-mobile {
+    .portfolio-frame-view-mobile {
+      display: none;
+    }
+  }
 }
 
 .portfolio-frame-background {

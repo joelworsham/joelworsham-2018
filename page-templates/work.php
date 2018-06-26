@@ -165,7 +165,7 @@ get_header(); ?>
 							<?php echo $item['description']; ?>
                         </div>
 
-                        <a href="#" class="portfolio-item-button" data-portfolio-preview="<?php echo $i; ?>">
+                        <a href="#" class="portfolio-item-button" data-portfolio-preview="<?php echo $i; ?>" data-no-mobile="<?php echo isset( $item['no_mobile'] ) ? '1' : '0'; ?>">
                             <span class="button-text">View Preview</span>
                         </a>
 

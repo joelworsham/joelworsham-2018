@@ -8,14 +8,20 @@ $(() => {
 
         e.preventDefault();
 
-        let i      = $(this).attr('data-portfolio-preview');
-        let $frame = $("#portfolio-frame");
-
-        console.log(i);
+        let i        = $(this).attr('data-portfolio-preview');
+        let $frame   = $("#portfolio-frame");
+        let noMobile = $(this).attr('data-no-mobile') === '1';
 
         $frame.data('portfolio_current_i', i);
         $frame.data('portfolio_current_view', false);
         $frame.addClass('open');
+
+        if ( noMobile ) {
+            $frame.addClass('no-mobile');
+        } else {
+            $frame.removeClass('no-mobile');
+        }
+
         $('body').addClass('portfolio-open');
 
         $frame.find('[data-portfolio-site]').click();
@@ -37,7 +43,7 @@ $(() => {
         let i      = $frame.data('portfolio_current_i');
         let view   = $frame.data('portfolio_current_view');
 
-        if (view === 'site') {
+        if ( view === 'site' ) {
             return;
         }
 
@@ -57,7 +63,7 @@ $(() => {
         let i      = $frame.data('portfolio_current_i');
         let view   = $frame.data('portfolio_current_view');
 
-        if (view === 'mobile') {
+        if ( view === 'mobile' ) {
             return;
         }
 
